@@ -21,7 +21,7 @@ var numSquares = function(n) {
 /**
  * 动态规划五部曲
  * 1. 确定dp数组以及下标的含义。dp[i]: 和为i的完全平方数的最少数量dp[i]
- * 2. 确定递推公式。dp[i]可由dpd[i - j * j]推出，dp[i - j * j] + 1便可以凑成dp[i]，因此公式为dp[i] = min(dp[i - j * j] + 1, dp[i -])
+ * 2. 确定递推公式。dp[i]可由dpd[i - j * j]推出，dp[i - j * j] + 1便可以凑成dp[i]，因此公式为dp[i] = min(dp[i - j * j] + 1, dp[i])
  * 3. dp数组如何初始化。
  * 4. 确定遍历顺序。如果求组合数就是外层for循环遍历物品，内层for遍历背包。如果求排列数就是外层for遍历背包，内层for循环遍历物品。
  * 5. 举例推到dp数组
